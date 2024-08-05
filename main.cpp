@@ -2,11 +2,11 @@
 
 int main()
 {
-    DigitalIn B1_USER(BUTTON1);
+    DigitalIn B1_USER(BUTTON1); //objeto de la clase digitalin
 
-    DigitalOut LD1(LED1);
+    DigitalOut LD2(LED2);
 
     while (true) {
-        LD1 = B1_USER;
+        LD2 = B1_USER;
     }
 }
