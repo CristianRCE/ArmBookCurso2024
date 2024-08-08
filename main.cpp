@@ -6,8 +6,8 @@ int main()
 
     DigitalOut LD2(LED2); 
 
-    while (true) {
-        if (B1_USER==1) 
+    while (true){
+        if (B1_USER==0) 
         {
         LD2=1; // prendo el led.
         }
