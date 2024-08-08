@@ -11,9 +11,9 @@ int main()
         if(B1_USER==0) 
         {
         LD2=1; // prendo el led.
-        wait(1.0);
+        wait_us(1000000);
         LD2=0; // prendo el led.
-        wait(1.0);
+        wait_us(1000000);
         }
         else
         {
