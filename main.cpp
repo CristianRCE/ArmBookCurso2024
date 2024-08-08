@@ -3,13 +3,17 @@
 int main()
 {
     DigitalIn B1_USER(BUTTON1);
-
+    // DigitalOut Trigger_sensor();
+    // DigitalIn Echo_sensor();
     DigitalOut LD2(LED2); 
 
     while (true){
-        if (B1_USER==0) 
+        if(B1_USER==0) 
         {
         LD2=1; // prendo el led.
+        wait(1.0);
+        LD2=0; // prendo el led.
+        wait(1.0);
         }
         else
         {
